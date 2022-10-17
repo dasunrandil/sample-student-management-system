@@ -14,34 +14,46 @@
     <h1 class="text-center py-3">Student Management System</h1>
     <div class="row">
         <div class="col-xl-4">
-            <form action="#">
+            <form id="frm-student" action="#">
                 <div>
-                    <button id="btn-add" class="btn btn-success">Add New Student +</button>
+                    <button id="btn-new" class="btn btn-success" type="button">Add New Student +</button>
                 </div>
                 <div class="form-floating mt-2">
-                    <input disabled type="text" class="form-control" id="txt-id">
+                    <input readonly disabled type="text" class="form-control" id="txt-id">
                     <label for="txt-id">Student ID</label>
+                    <div class="invalid-feedback">
+                        Please enter a valid Student ID
+                    </div>
                 </div>
                 <div class="form-floating mt-2">
                     <input disabled type="text" class="form-control" id="txt-name">
                     <label for="txt-name">Student Name</label>
+                    <div class="invalid-feedback">
+                        Please enter a valid Student Name
+                    </div>
                 </div>
                 <div class="form-floating mt-2">
                     <input disabled type="text" class="form-control" id="txt-address">
                     <label for="txt-address">Student Address</label>
+                    <div class="invalid-feedback">
+                        Please enter a valid Student Address
+                    </div>
                 </div>
                 <div class="form-floating mt-2">
                     <input disabled type="text" class="form-control" id="txt-contact">
                     <label for="txt-contact">Student Contact</label>
+                    <div class="invalid-feedback">
+                        Please enter a valid Student Contact
+                    </div>
                 </div>
                 <div class="mt-2">
-                    <button id="btn-save" disabled class="btn btn-primary" type="button">Save Student </button>
+                    <button id="btn-save" disabled class="btn btn-primary" type="submit">Save Student </button>
                     <button id="btn-clear" disabled class="btn btn-warning" type="reset">Clear</button>
                 </div>
             </form>
         </div>
-        <div class="col-xl-8">
-            <table class="table table-hover">
+        <div class="col-xl-8 mt-4">
+            <table id="tbl-students" class="table table-hover empty">
                 <colgroup>
                     <col class="col-id">
                     <col class="col-name">
@@ -57,18 +69,6 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>S001</td>
-                        <td>Dasun</td>
-                        <td>071-1234567</td>
-                        <td><i class="bi bi-trash"></i></td>
-                    </tr>
-                    <tr>
-                        <td>S002</td>
-                        <td>Anushka</td>
-                        <td>076-1234567</td>
-                        <td><i class="bi bi-trash"></i></td>
-                    </tr>
                 </tbody>
                 <tfoot>
                     <th class="text-center" colspan="4">No Records Found</th>

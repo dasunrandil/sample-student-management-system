@@ -1,4 +1,17 @@
 table{
+
+    &.empty tfoot{
+        display: table-footer-group;
+    }
+
+    tfoot{
+        display: none;
+    }
+
+    tbody tr.selected{
+        background-color: lightskyblue;
+    }
+
     td:first-child,
     th:first-child,
     td:last-child{
@@ -31,5 +44,6 @@ table{
 }
 
 .col-remove{
-    width: 40px;
+    width: 70px;
 }
+
