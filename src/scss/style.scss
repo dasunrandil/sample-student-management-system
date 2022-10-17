@@ -1,0 +1,35 @@
+table{
+    td:first-child,
+    th:first-child,
+    td:last-child{
+        text-align: center;
+
+    }
+
+    td ,th {
+        vertical-align: middle;
+    }
+
+    td:last-child{
+        font-size: 24px;
+        i:hover{
+            color: red;
+        }
+    }
+
+    tbody tr{
+        cursor: pointer;
+    }
+}
+
+.col-id{
+    width: 70px;
+}
+
+.col-name{
+    width: 150px;
+}
+
+.col-remove{
+    width: 40px;
+}
